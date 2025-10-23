@@ -21,7 +21,7 @@ After renaming the music files, use filename_to_title.py to apply its name as it
   For cover art, you must have the title of the track and the contributing artist labelled in properties
   Cover art prompt: 
   
-`  python mp3_cover_finder.py -p "Your folder location of all the music files" --recursive`
+`python mp3_cover_finder.py -p "Your folder location of all the music files" --recursive`
 
   Use same_cover.py if you want to apply a single cover art to multiple mp3 files.
   In the same_cover.py, input the location of the cover art and the folder that contains the mp3 files. 
