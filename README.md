@@ -1,6 +1,8 @@
 **Download youtube videos as mp3 and find cover pictures and albums.**
 
-put one or multiple links at every newline in yt_links.txt file (Create a txt file and name it yt_links.txt)
+`pip install -r requirements.txt`
+
+Put one or multiple links at every newline in yt_links.txt file (Create a txt file and name it yt_links.txt)
 
 Youtube video download prompt:
 
