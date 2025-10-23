@@ -1,4 +1,7 @@
-**Download youtube videos as mp3 and find cover pictures and albums.**
+<h1>
+  Download youtube videos as mp3 and find cover pictures and albums.
+</h1>
+
 
 `pip install -r requirements.txt`
 
