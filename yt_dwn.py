@@ -85,15 +85,14 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
 
     # Template includes video ID so re-runs don't duplicate
-    outtmpl = str(outdir / "%(title)s [%(id)s].%(ext)s")
+    outtmpl = str(outdir / "%(title)s.%(ext)s")
 
     postprocessors = [
         {
             "key": "FFmpegExtractAudio",
             "preferredcodec": "mp3",
             "preferredquality": str(args.kbps),
-        },
-        {"key": "FFmpegMetadata", "add_metadata": True},
+        }
     ]
     write_thumb = not args.no_thumb
     if write_thumb:
@@ -116,6 +115,11 @@ def main():
         "restrictfilenames": True,
         "trim_file_name": 200,
     }
+    ydl_opts.update({
+    "format": 'bestaudio[ext=m4a]/251/bestaudio/best',
+    "extractor_args": {"youtube": {"player_client": ["android"]}},
+    "force_ipv4": True,
+    })
 
     urls = load_urls(args)
 
