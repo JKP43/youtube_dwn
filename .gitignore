@@ -1,2 +1,11 @@
+Music/
+All Music/
+prompts/yt_links.txt
+*.mp3
+*.m4a
+*.webm
+*.part
 __pycache__/
-*.pyc
+*.log
+.env
+.env.*
