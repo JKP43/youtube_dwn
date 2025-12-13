@@ -1,17 +1,10 @@
 **Download youtube videos as mp3 and find cover pictures and albums.**
 
-put one or multiple links at every newline in yt_links.txt file (Create a txt file and name it yt_links.txt)
+put one or multiple links at every newline in yt_links.txt file (Create a txt file and name it yt_links.txt in Music folder)
 
-Youtube video download prompt:
+After renaming the music files, follow the instructions printed
 
-`python -m yt_dlp -a yt_links.txt 
-  -f "bestaudio[ext=m4a]/251/bestaudio/best" 
-  --extractor-args "youtube:player_client=android" 
-  --force-ipv4 -x --audio-format mp3 --audio-quality 192K 
-  -o "Downloads/MP3/%(title)s [%(id)s].%(ext)s"`
-
-After renaming the music files, use filename_to_title.py to apply its name as its title in properties.
-(Just run filname_to_title.py and input the location of the folder)
+If the CLI options failed to fetch cover art:
 
   For cover art, you must have the title of the track and the contributing artist labelled in properties
   Cover art prompt: 
