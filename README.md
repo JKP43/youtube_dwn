@@ -1,5 +1,7 @@
 **Download youtube videos as mp3 and find cover pictures and albums.**
 
+*Required: ffmpegR 
+
 put one or multiple links at every newline in yt_links.txt file (Create a txt file and name it yt_links.txt in Music folder)
 
 After renaming the music files, follow the instructions printed
